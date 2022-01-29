@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9435EE0727A5E56000D666A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE0627A5E56000D666A2 /* AppDelegate.swift */; };
 		9435EE0927A5E56000D666A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE0827A5E56000D666A2 /* SceneDelegate.swift */; };
-		9435EE0B27A5E56000D666A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE0A27A5E56000D666A2 /* ViewController.swift */; };
+		9435EE0B27A5E56000D666A2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE0A27A5E56000D666A2 /* WelcomeViewController.swift */; };
 		9435EE0E27A5E56000D666A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9435EE0C27A5E56000D666A2 /* Main.storyboard */; };
 		9435EE1127A5E56000D666A2 /* Solace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE0F27A5E56000D666A2 /* Solace.xcdatamodeld */; };
 		9435EE1327A5E56100D666A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9435EE1227A5E56100D666A2 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		9435EE0327A5E56000D666A2 /* Solace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9435EE0627A5E56000D666A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9435EE0827A5E56000D666A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9435EE0A27A5E56000D666A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9435EE0A27A5E56000D666A2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9435EE0D27A5E56000D666A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9435EE1027A5E56000D666A2 /* Solace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Solace.xcdatamodel; sourceTree = "<group>"; };
 		9435EE1227A5E56100D666A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				9435EE0627A5E56000D666A2 /* AppDelegate.swift */,
 				9435EE0827A5E56000D666A2 /* SceneDelegate.swift */,
-				9435EE0A27A5E56000D666A2 /* ViewController.swift */,
+				9435EE0A27A5E56000D666A2 /* WelcomeViewController.swift */,
 				9435EE0C27A5E56000D666A2 /* Main.storyboard */,
 				9435EE1227A5E56100D666A2 /* Assets.xcassets */,
 				9435EE1427A5E56100D666A2 /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9435EE0B27A5E56000D666A2 /* ViewController.swift in Sources */,
+				9435EE0B27A5E56000D666A2 /* WelcomeViewController.swift in Sources */,
 				9435EE0727A5E56000D666A2 /* AppDelegate.swift in Sources */,
 				9435EE1127A5E56000D666A2 /* Solace.xcdatamodeld in Sources */,
 				9435EE0927A5E56000D666A2 /* SceneDelegate.swift in Sources */,
