@@ -6,12 +6,21 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class SurveyViewController3: UIViewController {
+    
+    var button1: Bool = false
+    var button2: Bool = false
+    var button3: Bool = false
+    var button4: Bool = false
+    var button5: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -23,6 +32,69 @@ class SurveyViewController3: UIViewController {
             sender.backgroundColor = UIColor(named: "")
         }
     }
+    
+   
+    @IBAction func button1(_ sender: UIButton) {
+        if sender.backgroundColor == UIColor(named: "") {
+            button1 = true
+        } else {
+            button1 = false
+        }
+    }
+    
+    @IBAction func button2(_ sender: UIButton) {
+        if sender.backgroundColor == UIColor(named: "") {
+            button2 = true
+        } else {
+            button2 = false
+        }
+    }
+    
+    @IBAction func button3(_ sender: UIButton) {
+        if sender.backgroundColor == UIColor(named: "") {
+            button3 = true
+        } else {
+            button3 = false
+        }
+    }
+    
+    @IBAction func button4(_ sender: UIButton) {
+        if sender.backgroundColor == UIColor(named: "") {
+            button4 = true
+        } else {
+            button4 = false
+        }
+    }
+    
+    @IBAction func button5(_ sender: UIButton) {
+        if sender.backgroundColor == UIColor(named: "") {
+            button5 = true
+        } else {
+            button5 = false
+        }
+    }
+    
+    @IBAction func contPressed(_ sender: Any) {
+        let db = Firestore.firestore()
+        var ref: DocumentReference? = nil
+        ref = db.collection("patients").addDocument(data: [
+            "dob": "--date of birth here--",
+            "choice1": button1,
+            "choice2": button2,
+            "choice3": button3,
+            "choice4": button4,
+            "choice5": button5
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+        self.performSegue(withIdentifier: "Segue3", sender: self)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

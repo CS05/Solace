@@ -59,7 +59,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Let's help." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzY-Mo-ELx">
-                                <rect key="frame" x="54" y="486" width="286" height="50"/>
+                                <rect key="frame" x="54" y="490" width="286" height="50"/>
                                 <color key="backgroundColor" name="Teal1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MBI-Zp-4Ce"/>
@@ -110,8 +110,8 @@
                             <constraint firstItem="GJp-KM-upg" firstAttribute="centerX" secondItem="OPk-JZ-I7Y" secondAttribute="centerX" id="Q6H-W4-L2M"/>
                             <constraint firstItem="GJp-KM-upg" firstAttribute="leading" secondItem="mSr-Eh-VKo" secondAttribute="leading" id="bhJ-vJ-o4Q"/>
                             <constraint firstItem="OqP-3m-PKU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="bk6-Qm-MEp"/>
-                            <constraint firstItem="Kpz-IT-JFa" firstAttribute="top" secondItem="IzY-Mo-ELx" secondAttribute="bottom" constant="51" id="cXC-fE-zTw"/>
-                            <constraint firstItem="IzY-Mo-ELx" firstAttribute="top" secondItem="D7f-gr-6zi" secondAttribute="bottom" constant="41" id="itG-hh-YN8"/>
+                            <constraint firstItem="Kpz-IT-JFa" firstAttribute="top" secondItem="IzY-Mo-ELx" secondAttribute="bottom" constant="47" id="cXC-fE-zTw"/>
+                            <constraint firstItem="IzY-Mo-ELx" firstAttribute="top" secondItem="D7f-gr-6zi" secondAttribute="bottom" constant="45" id="itG-hh-YN8"/>
                             <constraint firstItem="GJp-KM-upg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYO-Pe-jwh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kpz-IT-JFa" secondAttribute="bottom" constant="130" id="q7n-0R-Cck"/>
                             <constraint firstItem="D7f-gr-6zi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="qit-pH-5Sd"/>
@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Let's learn a bit about you." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feH-mF-B4u">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Let's get acquainted." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feH-mF-B4u">
                                 <rect key="frame" x="34" y="63" width="323" height="127"/>
                                 <color key="backgroundColor" name="Teal1"/>
                                 <constraints>
@@ -341,6 +341,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="button1:" destination="H3C-0v-vMd" eventType="touchUpInside" id="gOa-xL-0Om"/>
                                     <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="OzT-IU-Py7"/>
                                 </connections>
                             </button>
@@ -360,6 +361,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="button2:" destination="H3C-0v-vMd" eventType="touchUpInside" id="Xaf-gg-bsL"/>
                                     <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="pyZ-WN-2q5"/>
                                 </connections>
                             </button>
@@ -379,6 +381,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="button4:" destination="H3C-0v-vMd" eventType="touchUpInside" id="4T7-NV-14L"/>
                                     <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="0cU-hA-DAg"/>
                                 </connections>
                             </button>
@@ -398,6 +401,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="button5:" destination="H3C-0v-vMd" eventType="touchUpInside" id="Qlo-kE-rGU"/>
                                     <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="fCQ-hc-geE"/>
                                 </connections>
                             </button>
@@ -414,6 +418,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="button3:" destination="H3C-0v-vMd" eventType="touchUpInside" id="ohF-fY-9UZ"/>
                                     <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="lIl-7w-51q"/>
                                 </connections>
                             </button>
@@ -434,7 +439,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="contPressed:" destination="I6X-MP-vxo" eventType="touchUpInside" id="W5Z-FF-7fA"/>
+                                    <action selector="contPressed:" destination="H3C-0v-vMd" eventType="touchUpInside" id="f5T-KU-qg5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -466,10 +471,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZDh-UQ-rq8"/>
+                    <connections>
+                        <segue destination="ibT-W1-gku" kind="show" identifier="Segue3" id="zUd-VF-fai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efZ-Xn-2ne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2987.6923076923076" y="54.739336492890992"/>
+        </scene>
+        <!--Thanks View Controller-->
+        <scene sceneID="sEY-Ue-rGA">
+            <objects>
+                <viewController id="ibT-W1-gku" customClass="ThanksViewController" customModule="Solace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="avs-em-s6a">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1w3-Mk-th8"/>
+                        <color key="backgroundColor" name="Teal1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3RW-ck-jPH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JoT-Yy-OK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3980" y="55"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aDz-fP-Bkx">
