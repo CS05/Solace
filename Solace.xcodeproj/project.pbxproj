@@ -14,6 +14,8 @@
 		9435EE1127A5E56000D666A2 /* Solace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE0F27A5E56000D666A2 /* Solace.xcdatamodeld */; };
 		9435EE1327A5E56100D666A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9435EE1227A5E56100D666A2 /* Assets.xcassets */; };
 		9435EE1627A5E56100D666A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9435EE1427A5E56100D666A2 /* LaunchScreen.storyboard */; };
+		9435EE2227A607D600D666A2 /* SurveyViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE2127A607D600D666A2 /* SurveyViewController1.swift */; };
+		9435EE2627A613E600D666A2 /* SurveyViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9435EE2527A613E600D666A2 /* SurveyViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9435EE1227A5E56100D666A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9435EE1527A5E56100D666A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9435EE1727A5E56100D666A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9435EE2127A607D600D666A2 /* SurveyViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController1.swift; sourceTree = "<group>"; };
+		9435EE2527A613E600D666A2 /* SurveyViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				9435EE0627A5E56000D666A2 /* AppDelegate.swift */,
 				9435EE0827A5E56000D666A2 /* SceneDelegate.swift */,
 				9435EE0A27A5E56000D666A2 /* WelcomeViewController.swift */,
+				9435EE2127A607D600D666A2 /* SurveyViewController1.swift */,
+				9435EE2527A613E600D666A2 /* SurveyViewController2.swift */,
 				9435EE0C27A5E56000D666A2 /* Main.storyboard */,
 				9435EE1227A5E56100D666A2 /* Assets.xcassets */,
 				9435EE1427A5E56100D666A2 /* LaunchScreen.storyboard */,
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9435EE2227A607D600D666A2 /* SurveyViewController1.swift in Sources */,
+				9435EE2627A613E600D666A2 /* SurveyViewController2.swift in Sources */,
 				9435EE0B27A5E56000D666A2 /* WelcomeViewController.swift in Sources */,
 				9435EE0727A5E56000D666A2 /* AppDelegate.swift in Sources */,
 				9435EE1127A5E56000D666A2 /* Solace.xcdatamodeld in Sources */,
