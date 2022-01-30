@@ -272,6 +272,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="contPressed:" destination="I6X-MP-vxo" eventType="touchUpInside" id="lNF-gI-0kN"/>
+                                    <segue destination="H3C-0v-vMd" kind="show" id="bsr-go-q3v"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Now, we're going to ask you a few more questions, just to build a better picture of you and help you get the care you need." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xta-Zw-Tu6">
@@ -306,6 +307,169 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMw-Jh-Tkj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2044.6153846153845" y="54.739336492890992"/>
+        </scene>
+        <!--Survey View Controller3-->
+        <scene sceneID="Nno-7B-Kds">
+            <objects>
+                <viewController id="H3C-0v-vMd" customClass="SurveyViewController3" customModule="Solace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOB-AE-J3O">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Which of these would you say apply to you?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRs-1o-gTC">
+                                <rect key="frame" x="42" y="76" width="306" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mzQ-aq-fRU"/>
+                                </constraints>
+                                <color key="textColor" name="AppGray"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBh-IW-eIu">
+                                <rect key="frame" x="42" y="240" width="307" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="vS0-Hg-mkI"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My life is falling apart">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="OzT-IU-Py7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoa-sa-rWK">
+                                <rect key="frame" x="42" y="298" width="307" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="KSK-Yu-2dY"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="I want to end it all">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="pyZ-WN-2q5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qq8-qd-Hf3">
+                                <rect key="frame" x="42" y="479" width="307" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="yZ6-eN-BiJ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Nothing matters to me">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="0cU-hA-DAg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFB-4X-atb">
+                                <rect key="frame" x="42" y="541" width="307" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="rrn-cP-Uom"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="I feel lonely">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="fCQ-hc-geE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbK-2R-gvw">
+                                <rect key="frame" x="42" y="359" width="307" height="106"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Friends or loved ones have betrayed me">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonToggled:" destination="H3C-0v-vMd" eventType="touchUpInside" id="lIl-7w-51q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9l-XZ-W4e">
+                                <rect key="frame" x="69" y="662" width="253" height="68"/>
+                                <color key="backgroundColor" name="AppGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="rkk-42-3br"/>
+                                </constraints>
+                                <color key="tintColor" name="Teal2"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Continue">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="46"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="contPressed:" destination="I6X-MP-vxo" eventType="touchUpInside" id="W5Z-FF-7fA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2PR-xU-Qkx"/>
+                        <color key="backgroundColor" name="Teal1"/>
+                        <constraints>
+                            <constraint firstItem="KRs-1o-gTC" firstAttribute="trailing" secondItem="MBh-IW-eIu" secondAttribute="trailing" id="7nQ-GT-Enz"/>
+                            <constraint firstItem="d9l-XZ-W4e" firstAttribute="top" secondItem="YFB-4X-atb" secondAttribute="bottom" constant="74" id="8RA-Aw-vHI"/>
+                            <constraint firstItem="Qq8-qd-Hf3" firstAttribute="trailing" secondItem="YFB-4X-atb" secondAttribute="trailing" id="AgB-sf-g6K"/>
+                            <constraint firstItem="2PR-xU-Qkx" firstAttribute="bottom" secondItem="d9l-XZ-W4e" secondAttribute="bottom" constant="80" id="Dzn-e2-RoP"/>
+                            <constraint firstItem="hoa-sa-rWK" firstAttribute="leading" secondItem="qbK-2R-gvw" secondAttribute="leading" id="JOQ-Fp-6TT"/>
+                            <constraint firstItem="KRs-1o-gTC" firstAttribute="leading" secondItem="MBh-IW-eIu" secondAttribute="leading" id="NhJ-DF-Ywi"/>
+                            <constraint firstItem="KRs-1o-gTC" firstAttribute="centerX" secondItem="mOB-AE-J3O" secondAttribute="centerX" id="PJh-7x-HHA"/>
+                            <constraint firstItem="MBh-IW-eIu" firstAttribute="top" secondItem="KRs-1o-gTC" secondAttribute="bottom" constant="64" id="Xwf-va-1nY"/>
+                            <constraint firstItem="MBh-IW-eIu" firstAttribute="leading" secondItem="hoa-sa-rWK" secondAttribute="leading" id="YyO-EX-DUa"/>
+                            <constraint firstItem="hoa-sa-rWK" firstAttribute="trailing" secondItem="qbK-2R-gvw" secondAttribute="trailing" id="aDv-Pb-VZY"/>
+                            <constraint firstItem="KRs-1o-gTC" firstAttribute="leading" secondItem="2PR-xU-Qkx" secondAttribute="leading" constant="42" id="bNu-NS-DWz"/>
+                            <constraint firstItem="qbK-2R-gvw" firstAttribute="top" secondItem="hoa-sa-rWK" secondAttribute="bottom" constant="14" id="dYI-Fg-N2w"/>
+                            <constraint firstItem="Qq8-qd-Hf3" firstAttribute="top" secondItem="qbK-2R-gvw" secondAttribute="bottom" constant="14" id="hY9-yR-eq0"/>
+                            <constraint firstItem="YFB-4X-atb" firstAttribute="centerX" secondItem="d9l-XZ-W4e" secondAttribute="centerX" id="jnP-cT-9Ui"/>
+                            <constraint firstItem="MBh-IW-eIu" firstAttribute="trailing" secondItem="hoa-sa-rWK" secondAttribute="trailing" id="kKS-kb-ISU"/>
+                            <constraint firstItem="Qq8-qd-Hf3" firstAttribute="leading" secondItem="YFB-4X-atb" secondAttribute="leading" id="lMO-Lt-ZEs"/>
+                            <constraint firstItem="YFB-4X-atb" firstAttribute="top" secondItem="Qq8-qd-Hf3" secondAttribute="bottom" constant="15" id="oI8-cF-RlJ"/>
+                            <constraint firstItem="qbK-2R-gvw" firstAttribute="trailing" secondItem="Qq8-qd-Hf3" secondAttribute="trailing" id="pg2-md-xKC"/>
+                            <constraint firstItem="KRs-1o-gTC" firstAttribute="top" secondItem="2PR-xU-Qkx" secondAttribute="top" constant="32" id="vje-uP-8Qq"/>
+                            <constraint firstItem="qbK-2R-gvw" firstAttribute="leading" secondItem="Qq8-qd-Hf3" secondAttribute="leading" id="wOr-AM-6d1"/>
+                            <constraint firstItem="d9l-XZ-W4e" firstAttribute="leading" secondItem="2PR-xU-Qkx" secondAttribute="leading" constant="69" id="x8g-fb-Xj1"/>
+                            <constraint firstItem="hoa-sa-rWK" firstAttribute="top" secondItem="MBh-IW-eIu" secondAttribute="bottom" constant="16" id="xZI-Gg-cXb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZDh-UQ-rq8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efZ-Xn-2ne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2987.6923076923076" y="54.739336492890992"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aDz-fP-Bkx">
