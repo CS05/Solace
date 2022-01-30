@@ -74,6 +74,8 @@ class SurveyViewController3: UIViewController {
         }
     }
     
+    var docID: String!
+    
     @IBAction func contPressed(_ sender: Any) {
         let db = Firestore.firestore()
         var ref: DocumentReference? = nil
@@ -89,9 +91,17 @@ class SurveyViewController3: UIViewController {
                 print("Error adding document: \(err)")
             } else {
                 print("Document added with ID: \(ref!.documentID)")
+                self.docID = ref!.documentID
+                
             }
         }
         self.performSegue(withIdentifier: "Segue3", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var iden: String = self.docID!
+        let vc = segue.destination as? ThanksViewController
+        vc?.id = iden
     }
     
     

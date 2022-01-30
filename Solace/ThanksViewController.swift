@@ -6,13 +6,20 @@
 //
 
 import UIKit
+import Firebase
 
 class ThanksViewController: UIViewController {
+    
+    var id: String?
 
     override func viewDidLoad() {
+        print(id!)
         super.viewDidLoad()
+        
+        sleep(5000)
+        
+        self.performSegue(withIdentifier: "Segue4", sender: self)
 
-        // Do any additional setup after loading the view.
     }
     
 

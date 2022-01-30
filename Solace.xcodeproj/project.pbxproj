@@ -78,13 +78,13 @@
 				9435EE2127A607D600D666A2 /* SurveyViewController1.swift */,
 				9435EE2527A613E600D666A2 /* SurveyViewController2.swift */,
 				9435EE2727A61B7500D666A2 /* SurveyViewController3.swift */,
+				9435EE3027A6359B00D666A2 /* ThanksViewController.swift */,
 				9435EE0C27A5E56000D666A2 /* Main.storyboard */,
 				9435EE1427A5E56100D666A2 /* LaunchScreen.storyboard */,
 				9435EE1227A5E56100D666A2 /* Assets.xcassets */,
 				9435EE1727A5E56100D666A2 /* Info.plist */,
 				9435EE2927A62AD300D666A2 /* GoogleService-Info.plist */,
 				9435EE0F27A5E56000D666A2 /* Solace.xcdatamodeld */,
-				9435EE3027A6359B00D666A2 /* ThanksViewController.swift */,
 			);
 			path = Solace;
 			sourceTree = "<group>";
