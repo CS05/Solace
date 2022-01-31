@@ -10,13 +10,12 @@ import Firebase
 
 class ThanksViewController: UIViewController {
     
-    var id: String?
+    
 
     override func viewDidLoad() {
        
         super.viewDidLoad()
         
-        sleep(5000)
         
         self.performSegue(withIdentifier: "Segue4", sender: self)
 
