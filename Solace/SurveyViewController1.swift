@@ -13,6 +13,7 @@ class SurveyViewController1: UIViewController {
     
     @IBAction func contPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "Segue1", sender: self)
+        dismiss(animated: false, completion: nil)
     }
     
     @IBOutlet weak var datePicker: UIDatePicker!

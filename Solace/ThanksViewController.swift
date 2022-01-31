@@ -13,7 +13,7 @@ class ThanksViewController: UIViewController {
     var id: String?
 
     override func viewDidLoad() {
-        print(id!)
+       
         super.viewDidLoad()
         
         sleep(5000)
